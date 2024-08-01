@@ -9,19 +9,33 @@
 
 </head>
 <body>
-
+  <main class="container my-6 text-center">
     <h1>Calcola il prezzo del tuo biglietto</h1>
 
-    <form action="">
-        <input type="text" placeholder="Nome Cognome" id="Name">
-        <input type="text" placeholder="Km da percorrere" id="Km">
-           
+    <form action="" class="row">
+        <div class="col-4 ">
+            <label class="form-label">Nome Cognome</label>
+            <input type="text" id="inputName" class="form-control">
+        </div>
+        <div class="col-4 ">
+            <label class="form-label">Km da percorrere</label>
+            <input type="text" id="inputKm" class="form-control">
+        </div>
+        <div class="col-4 ">
+            <label class="form-label">Fascia d'età</label>
+            <select class="form-select">
+                <option value="1" id="Adulto"></option>
+                <option value="2" id="maggiorenne"></option>
+                <option value="3" id="minorenne"></option>
+              </select>
+        </div>
     </form>
 
     <div>
-        <button id="generate"></button>
-        <button id="delet"></button>
+        <button id="generate-btn"></button>
+        <button id="delet-btn"></button>
     </div>
+</main>
     
 </body>
 </html>
