@@ -40,10 +40,10 @@ console.log (message)
 //Mostro in pagina
 messagePrice.innerHTML = (message)
 */
-console.log('Java ok')
+console.log('JS ok')
 
 // TODO -------- RACCOLTA DATI -----------
-//Recupero i elementi del DOM
+
 //input
 const inputName = document.getElementById('inputName')
 const inputKm = document.getElementById('inputName')
