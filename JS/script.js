@@ -40,19 +40,27 @@ console.log (message)
 //Mostro in pagina
 messagePrice.innerHTML = (message)
 */
-console.log('JS ok')
+
 
 // TODO -------- RACCOLTA DATI -----------
-
 //input
-const inputName = document.getElementById('inputName')
-const inputKm = document.getElementById('inputName')
+const inputName = document.getElementById('inputName');
+const inputKm = document.getElementById('inputName');
 
 //Select
-const adult = document.getElementById('maggiorenne') 
-const overAge = document.getElementById('senior')
-const underAge = document.getElementById('minorenne')
+const adult = document.getElementById('maggiorenne');
+const overAge = document.getElementById('senior');
+const underAge = document.getElementById('minorenne');
 
 //Butons
-const btnGenerate = document.getElementById('generete-btn')
-const btnDel = document.getElementById('genereta-btn')
+const btnGenerate = document.getElementById('generate-btn');
+const btnDel = document.getElementById('delet-btn');
+
+//TODO -------------GESTIONE EVENTI------------------
+//Raccolta dati
+btnGenerate.addEventListener('click', function(){
+    const inputNameValue = inputName.value; 
+    const inputKmValue = inputKm.value;
+    console.log = (inputNameValue, inputKmValue)
+})
+
