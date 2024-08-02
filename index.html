@@ -26,19 +26,21 @@
         <div class="col-4 ">
             <p>Fascia d'età</p>
             <select id="selectElements" class="form-select">
-                <option value="1" id="maggiorenne">Maggiorenne</option>
-                <option value="2" id="senior">Senior</option>
-                <option value="3" id="minorenne">Minorenne</option>
+                <option value="" >Adulto</option>
+                <option value="junior" >Minorenne</option>
+                <option value="senior" >Over 65</option>
               </select>
         </div>
+    
+
+       <div class="text-end my-4">
+             <button id="generate-btn btn btn-primary">Genera</button>
+            <button id="delet-btn">Annulla</button>
+       </div>
     </form>
-
-    <div>
-        <button id="generate-btn">Genera</button>
-        <button id="delet-btn">Annulla</button>
-    </div>
-
-    <div id="info" class="fs-5 my-4"></div>
+    
+    <div class="d-none" id="info"></div>
+    <div class="d-none" id="discount"></div>
 </main>
     
 </body>
