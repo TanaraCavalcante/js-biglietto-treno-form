@@ -45,12 +45,10 @@ messagePrice.innerHTML = (message)
 // TODO -------- RACCOLTA DATI -----------
 //input
 const inputName = document.getElementById('inputName');
-const inputKm = document.getElementById('inputName');
+const inputKm = document.getElementById('inputKm');
 
 //Select
-const adult = document.getElementById('maggiorenne');
-const overAge = document.getElementById('senior');
-const underAge = document.getElementById('minorenne');
+const age = document.getElementById('selectElements');
 
 //Butons
 const btnGenerate = document.getElementById('generate-btn');
@@ -58,9 +56,19 @@ const btnDel = document.getElementById('delet-btn');
 
 //TODO -------------GESTIONE EVENTI------------------
 //Raccolta dati
-btnGenerate.addEventListener('click', function(){
-    const inputNameValue = inputName.value; 
-    const inputKmValue = inputKm.value;
-    console.log = (inputNameValue, inputKmValue)
+btnGenerate.addEventListener('click', function(e){
+    e.preventDefault();
+    const inputNameValue = inputName.value.trim(); 
+    const inputKmValue = inputKm.value.trim();
+    console.log(inputNameValue, inputKmValue);
 })
+
+btnDel.addEventListener('click', function(e){
+    e.preventDefault();
+  inputName.value = '';
+  inputKm.value = ''; 
+})
+
+
+
 
