@@ -59,7 +59,7 @@ const btnDel = document.getElementById('delet-btn');
 btnGenerate.addEventListener('click', function(e){
     e.preventDefault();
     const inputNameValue = inputName.value.trim(); 
-    const inputKmValue = inputKm.value.trim();
+    const inputKmValue = parseInt(inputKm.value.trim());
     console.log(inputNameValue, inputKmValue);
 })
 
@@ -68,6 +68,28 @@ btnDel.addEventListener('click', function(e){
   inputName.value = '';
   inputKm.value = ''; 
 })
+
+//TODO -------------ELABORAZIONE------------------
+//Text-Mensage
+const messagePrice = document.getElementById('info')
+const textMessage = "Il prezzo del tuo biglietto è € "
+
+//Preparo della variabile PREZZO per Km
+const priceKm = 0.21;
+console.log (priceKm);
+
+//TODO -------------CALCOLO-------------------------
+
+const inputKmValue = parseInt(inputKm.value.trim());
+
+//Prezzo del biglietto
+const ticketPrice 
+
+
+
+
+
+
 
 
 
